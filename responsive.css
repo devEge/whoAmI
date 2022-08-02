@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+     bg{
+          background-repeat: repeat;
+     }
+     h1{
+          font-size: 4em;
+          margin-bottom: 40px;
+     }
+     p{
+          font-size: 1.3rem;
+     }
+     .fa-brands{
+          font-size: 3rem;
+     }
+   }

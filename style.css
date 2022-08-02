@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     overflow: hidden;
+     background-color: #212121;
+     -webkit-user-select: none; /* Safari */        
+     -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* IE10+/Edge */
+     user-select: none; /* Standard */
+}
+
+.bg{
+     opacity: 0.1;
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     animation: animateBg 50s linear infinite;
+}
+
+@keyframes animateBg{
+     0%{
+          transform: scale(1);
+     }
+     50%{
+          transform: scale(1.2);
+     }
+}
+
+section{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+span{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 4px;
+     height: 4px;
+     background: #fff;
+     border-radius: 50%;
+     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1);
+     animation: animate 3s linear infinite;
+}
+
+span::before{
+     content: '';
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 300px;
+     height: 1px;
+     background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate{
+     0%{
+          transform: rotate(315deg) translateX(0);
+          opacity: 1;
+     }
+     70%{
+          opacity: 1;
+     }
+     100%{
+          transform: rotate(315deg) translateX(-1000px);
+          opacity: 0;
+     }
+}
+
+span:nth-child(1){
+     top: 0;
+     right: 1200;
+     left: initial;
+     animation-delay: 0;
+     animation-duration: 1s;
+}
+
+span:nth-child(2){
+     top: 0;
+     right: 80px;
+     left: initial;
+     animation-delay: 0.2;
+     animation-duration: 3s;
+}
+
+span:nth-child(3){
+     top: 0;
+     right: 1000px;
+     left: initial;
+     animation-delay: 0.4;
+     animation-duration: 4s;
+}
+
+span:nth-child(4){
+     top: 0;
+     right: 180px;
+     left: initial;
+     animation-delay: 0.6;
+     animation-duration: 3s;
+}
+
+span:nth-child(5){
+     top: 0;
+     right: 400px;
+     left: initial;
+     animation-delay: 0.8;
+     animation-duration: 2.5s;
+}
+
+span:nth-child(6){
+     top: 0;
+     right: 600px;
+     left: initial;
+     animation-delay: 1;
+     animation-duration: 3s;
+}
+
+span:nth-child(7){
+     top: 0px;
+     right: 1500px;
+     left: initial;
+     animation-delay: 1.2;
+     animation-duration: 1.75s;
+}
+
+span:nth-child(8){
+     top: 0px;
+     right: 700px;
+     left: initial;
+     animation-delay: 1.4;
+     animation-duration: 1.25s;
+}
+
+span:nth-child(9){
+     top: 0px;
+     right: 1000px;
+     left: initial;
+     animation-delay: 0.75;
+     animation-duration: 2.75s;
+}
+
+span:nth-child(10){
+     top: 0px;
+     right: 450px;
+     left: initial;
+     animation-delay: 2.75;
+     animation-duration: 2.25s;
+}
+
+.headerr{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 80%;
+}
+
+#ben{
+     width: 200px;
+     display: block;
+     border-radius: 50%;
+     border: 5px solid transparent;
+     box-shadow: 0 0 0 5px white;
+     margin-bottom: 40px;
+}
+
+h1{
+     font-family: 'Tangerine', cursive;
+     color: #9dd3bc;
+     font-size: 9em;
+     margin-bottom: 0.3em;
+     /*
+     font-family: 'Poppins', sans-serif;
+     -webkit-text-stroke: 2px #fff;
+     */
+}
+
+p{
+     color: #F6F6F6;
+     font-size: 1.5rem;
+     font-family: 'Quicksand', sans-serif;
+     margin-bottom: 70px;
+
+}
+
+.fa-brands{
+     color: #9dd3bc;
+     font-size: 4rem;
+     transition: .1s;
+}
+
+div > a:not(:last-child){
+     margin-right: 20px;
+}
+
+.fa-brands:hover{
+     cursor: pointer;
+     color: #7ba393;
+}
+
+.accounts{
+     margin-bottom: 50px;
+}
